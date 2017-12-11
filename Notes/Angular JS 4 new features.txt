@@ -1,0 +1,10 @@
+Angular 4 features
+------------------------
+-> Router Manu
+-> Animations
+-> ngIf -> added else too
+-> dynamic components along with NgComponentOutlet
+-> Typescript 2.1/2.2
+-> StrictNull Checks
+-> Other than browser clients
+-> Templates -> add classes
