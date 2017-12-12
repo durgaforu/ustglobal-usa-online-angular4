@@ -1,2 +1,80 @@
 Angular 4 features
 ------------------------
+1. Router Parammap
+2. Animations
+3. ngIf with else
+4. NgComponentsOutlets
+5. TypeScript 2.1/2.2
+6. StrictNullChecks
+7. Angular Universal
+8. Flat ES-Modules (Flat ESM/FESM)
+
+
+HTTP
+-----
+Adding search parameters to an HTTP request has been simplified
+
+Angular 4
+http.get(`${baseurl}/api/emps`,{params:{sort:'ascending'}});
+
+Angular 2
+const params=new URLSear4chParams();
+params.append('sort','ascending');
+http.get(`${baseUrl}/api/emps`,{search:params});
+
+
+Ng If with else
+-----------------
+
+<div *ngIf="emps.length >0;else empty">
+<h2>Employees</h2>
+</div>
+
+<ng-template #empty>
+<h2>No employees found</h2>
+</ng-template>
+
+
+
+PIPES Title Case
+-----------------
+<p>{{'ninja squad' | titlecase}} </p>
+<!-- will display 'Ninja Squad' -->
+
+
+Service Meta
+-----------------
+@Component({
+    selector: 'my-app',
+    template: `<h1>Welcome to my App</h1>`
+})
+
+export class MyAppComponent{
+    constructor(meta:Meta){
+        meta.addTag({name:'author', content:'Praveen Reddy'});
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
